@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kOG-mk-4fi">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="sYx-Wn-VrN">
+            <objects>
+                <viewController id="ox5-tG-lOa" customClass="ViewController" customModule="AutoLayoutPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T6Y-q1-mBt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGm-U4-ohB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ddj-oU-wQm">
+                                        <rect key="frame" x="20" y="0.0" width="335" height="1392"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2La-tx-glH">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="39"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="First" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="23R-N6-MMc" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="39"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="selectedTitle" value="FirstName"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="FirstName"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D03-nI-Uc4" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="171.5" y="0.0" width="163.5" height="39"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1yp-Ud-F9W" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                <rect key="frame" x="0.0" y="69" width="335" height="39.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="etB-gu-Mzr" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                <rect key="frame" x="0.0" y="138.5" width="335" height="39"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="jZE-is-NGT">
+                                                <rect key="frame" x="0.0" y="207.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SbG-bg-NX0" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_ray" translatesAutoresizingMaskIntoConstraints="NO" id="vy9-wD-pZq">
+                                                        <rect key="frame" x="310" y="12.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="VHZ-8W-ZKS"/>
+                                                            <constraint firstAttribute="width" constant="25" id="WbI-Sm-6mm"/>
+                                                            <constraint firstAttribute="width" secondItem="vy9-wD-pZq" secondAttribute="height" multiplier="1:1" id="ycE-hS-zgu"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="SbG-bg-NX0" firstAttribute="leading" secondItem="jZE-is-NGT" secondAttribute="leading" id="5uY-LX-N0W"/>
+                                                    <constraint firstAttribute="trailing" secondItem="SbG-bg-NX0" secondAttribute="trailing" id="GCm-QQ-eNk"/>
+                                                    <constraint firstAttribute="bottom" secondItem="SbG-bg-NX0" secondAttribute="bottom" id="ZK6-N0-NTK"/>
+                                                    <constraint firstItem="vy9-wD-pZq" firstAttribute="centerY" secondItem="jZE-is-NGT" secondAttribute="centerY" id="a5e-2I-dCb"/>
+                                                    <constraint firstItem="SbG-bg-NX0" firstAttribute="top" secondItem="jZE-is-NGT" secondAttribute="top" id="uyZ-gm-1Yr"/>
+                                                    <constraint firstItem="vy9-wD-pZq" firstAttribute="trailing" secondItem="SbG-bg-NX0" secondAttribute="trailing" id="veV-An-24h"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="UBd-Ca-T1c">
+                                                <rect key="frame" x="0.0" y="287.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Akr-zR-ZWM" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_ray" translatesAutoresizingMaskIntoConstraints="NO" id="YCb-q6-Lpm">
+                                                        <rect key="frame" x="310" y="12.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="QYb-8i-vRN"/>
+                                                            <constraint firstAttribute="width" secondItem="YCb-q6-Lpm" secondAttribute="height" multiplier="1:1" id="cKx-yO-fBa"/>
+                                                            <constraint firstAttribute="width" constant="25" id="hff-xP-Mt2"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Akr-zR-ZWM" firstAttribute="top" secondItem="UBd-Ca-T1c" secondAttribute="top" id="1nW-Pv-Oo9"/>
+                                                    <constraint firstItem="YCb-q6-Lpm" firstAttribute="centerY" secondItem="UBd-Ca-T1c" secondAttribute="centerY" id="3kB-YT-Zaj"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Akr-zR-ZWM" secondAttribute="bottom" id="Crh-jd-4mw"/>
+                                                    <constraint firstItem="YCb-q6-Lpm" firstAttribute="trailing" secondItem="Akr-zR-ZWM" secondAttribute="trailing" id="PMg-8o-vnk"/>
+                                                    <constraint firstItem="Akr-zR-ZWM" firstAttribute="leading" secondItem="UBd-Ca-T1c" secondAttribute="leading" id="RJC-qq-d5J"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Akr-zR-ZWM" secondAttribute="trailing" id="gj2-8i-OrH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="XS9-Mr-b9c">
+                                                <rect key="frame" x="0.0" y="367.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mHZ-za-ddX" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_ray" translatesAutoresizingMaskIntoConstraints="NO" id="pxO-Qt-plc">
+                                                        <rect key="frame" x="310" y="12.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="25" id="40m-ib-goQ"/>
+                                                            <constraint firstAttribute="height" constant="25" id="Sim-mN-p6B"/>
+                                                            <constraint firstAttribute="width" secondItem="pxO-Qt-plc" secondAttribute="height" multiplier="1:1" id="T60-C1-7l4"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="mHZ-za-ddX" firstAttribute="leading" secondItem="XS9-Mr-b9c" secondAttribute="leading" id="BrT-AY-vmf"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mHZ-za-ddX" secondAttribute="bottom" id="ELQ-Tf-5kv"/>
+                                                    <constraint firstItem="pxO-Qt-plc" firstAttribute="trailing" secondItem="mHZ-za-ddX" secondAttribute="trailing" id="KDr-oj-aaO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mHZ-za-ddX" secondAttribute="trailing" id="bu7-nU-gO6"/>
+                                                    <constraint firstItem="pxO-Qt-plc" firstAttribute="centerY" secondItem="XS9-Mr-b9c" secondAttribute="centerY" id="fHN-fE-FtC"/>
+                                                    <constraint firstItem="mHZ-za-ddX" firstAttribute="top" secondItem="XS9-Mr-b9c" secondAttribute="top" id="g7a-AI-aXX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="wTV-UM-OG6">
+                                                <rect key="frame" x="0.0" y="447.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZC2-gw-his" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_ray" translatesAutoresizingMaskIntoConstraints="NO" id="Vgd-0M-ba1">
+                                                        <rect key="frame" x="310" y="12.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="25" id="3ky-jC-exI"/>
+                                                            <constraint firstAttribute="width" secondItem="Vgd-0M-ba1" secondAttribute="height" multiplier="1:1" id="Z8W-nl-Y5P"/>
+                                                            <constraint firstAttribute="height" constant="25" id="f5y-kh-B68"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="ZC2-gw-his" firstAttribute="leading" secondItem="wTV-UM-OG6" secondAttribute="leading" id="R7D-Lj-erg"/>
+                                                    <constraint firstItem="ZC2-gw-his" firstAttribute="top" secondItem="wTV-UM-OG6" secondAttribute="top" id="XV7-W1-SLI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ZC2-gw-his" secondAttribute="bottom" id="aVe-Ow-EHv"/>
+                                                    <constraint firstItem="Vgd-0M-ba1" firstAttribute="centerY" secondItem="wTV-UM-OG6" secondAttribute="centerY" id="bRl-Dn-4gg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZC2-gw-his" secondAttribute="trailing" id="mft-ei-cmt"/>
+                                                    <constraint firstItem="Vgd-0M-ba1" firstAttribute="trailing" secondItem="ZC2-gw-his" secondAttribute="trailing" id="oZv-mx-ToY"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="HxV-t1-q37">
+                                                <rect key="frame" x="0.0" y="527.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ti4-j4-oeH" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_ray" translatesAutoresizingMaskIntoConstraints="NO" id="iTT-ns-aPa">
+                                                        <rect key="frame" x="310" y="12.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="Js8-4R-CH6"/>
+                                                            <constraint firstAttribute="width" constant="25" id="cTR-hn-AWj"/>
+                                                            <constraint firstAttribute="width" secondItem="iTT-ns-aPa" secondAttribute="height" multiplier="1:1" id="hZR-Sw-JEN"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="iTT-ns-aPa" firstAttribute="trailing" secondItem="ti4-j4-oeH" secondAttribute="trailing" id="4rH-YO-mxt"/>
+                                                    <constraint firstItem="ti4-j4-oeH" firstAttribute="top" secondItem="HxV-t1-q37" secondAttribute="top" id="FEh-gG-Fm7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ti4-j4-oeH" secondAttribute="bottom" id="Mrb-jY-Aca"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ti4-j4-oeH" secondAttribute="trailing" id="eJT-8g-HMr"/>
+                                                    <constraint firstItem="ti4-j4-oeH" firstAttribute="leading" secondItem="HxV-t1-q37" secondAttribute="leading" id="eUk-xa-mM4"/>
+                                                    <constraint firstItem="iTT-ns-aPa" firstAttribute="centerY" secondItem="HxV-t1-q37" secondAttribute="centerY" id="lqR-8u-ycb"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="76y-2k-tmO">
+                                                <rect key="frame" x="0.0" y="607.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1fh-V2-BFz" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_ray" translatesAutoresizingMaskIntoConstraints="NO" id="gKs-fj-jtE">
+                                                        <rect key="frame" x="310" y="12.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="gKs-fj-jtE" secondAttribute="height" multiplier="1:1" id="43p-IK-xQd"/>
+                                                            <constraint firstAttribute="height" constant="25" id="53z-Zz-sEx"/>
+                                                            <constraint firstAttribute="width" constant="25" id="wCB-99-sMd"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="gKs-fj-jtE" firstAttribute="centerY" secondItem="76y-2k-tmO" secondAttribute="centerY" id="HRG-4G-DaJ"/>
+                                                    <constraint firstItem="gKs-fj-jtE" firstAttribute="trailing" secondItem="1fh-V2-BFz" secondAttribute="trailing" id="HoV-if-JPC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1fh-V2-BFz" secondAttribute="bottom" id="XZE-GL-GjZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1fh-V2-BFz" secondAttribute="trailing" id="ZTr-T6-PYo"/>
+                                                    <constraint firstItem="1fh-V2-BFz" firstAttribute="top" secondItem="76y-2k-tmO" secondAttribute="top" id="fAu-3c-daV"/>
+                                                    <constraint firstItem="1fh-V2-BFz" firstAttribute="leading" secondItem="76y-2k-tmO" secondAttribute="leading" id="ia3-jp-jcN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="TJF-Vj-d19">
+                                                <rect key="frame" x="0.0" y="687.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dus-sU-4iI" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_ray" translatesAutoresizingMaskIntoConstraints="NO" id="aQL-QQ-HBO">
+                                                        <rect key="frame" x="310" y="12.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="1ne-zr-A5b"/>
+                                                            <constraint firstAttribute="width" secondItem="aQL-QQ-HBO" secondAttribute="height" multiplier="1:1" id="TwC-rp-c3o"/>
+                                                            <constraint firstAttribute="width" constant="25" id="dcd-bW-bho"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="dus-sU-4iI" secondAttribute="trailing" id="0gv-aL-RL2"/>
+                                                    <constraint firstItem="aQL-QQ-HBO" firstAttribute="centerY" secondItem="TJF-Vj-d19" secondAttribute="centerY" id="5Jz-Gk-D7Q"/>
+                                                    <constraint firstItem="dus-sU-4iI" firstAttribute="leading" secondItem="TJF-Vj-d19" secondAttribute="leading" id="9wM-1Q-I7A"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dus-sU-4iI" secondAttribute="bottom" id="Cbi-VJ-yri"/>
+                                                    <constraint firstItem="aQL-QQ-HBO" firstAttribute="trailing" secondItem="dus-sU-4iI" secondAttribute="trailing" id="hvq-3Q-EIJ"/>
+                                                    <constraint firstItem="dus-sU-4iI" firstAttribute="top" secondItem="TJF-Vj-d19" secondAttribute="top" id="teX-gl-wUT"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="yIm-ek-kmh">
+                                                <rect key="frame" x="0.0" y="767.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2OM-VS-KGg" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_ray" translatesAutoresizingMaskIntoConstraints="NO" id="BNa-pa-TSz">
+                                                        <rect key="frame" x="310" y="12.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="25" id="TEs-LS-nvU"/>
+                                                            <constraint firstAttribute="height" constant="25" id="dsS-ve-vph"/>
+                                                            <constraint firstAttribute="width" secondItem="BNa-pa-TSz" secondAttribute="height" multiplier="1:1" id="hVR-Vb-Gk3"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="2OM-VS-KGg" firstAttribute="leading" secondItem="yIm-ek-kmh" secondAttribute="leading" id="1aM-Eu-LbH"/>
+                                                    <constraint firstItem="2OM-VS-KGg" firstAttribute="top" secondItem="yIm-ek-kmh" secondAttribute="top" id="ACd-C0-gd2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2OM-VS-KGg" secondAttribute="bottom" id="Lrd-UU-XDo"/>
+                                                    <constraint firstItem="BNa-pa-TSz" firstAttribute="centerY" secondItem="yIm-ek-kmh" secondAttribute="centerY" id="hHm-MV-4AX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2OM-VS-KGg" secondAttribute="trailing" id="sCP-QL-HOm"/>
+                                                    <constraint firstItem="BNa-pa-TSz" firstAttribute="trailing" secondItem="2OM-VS-KGg" secondAttribute="trailing" id="tHy-wH-84i"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="7Sk-mA-mls">
+                                                <rect key="frame" x="0.0" y="847.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m0I-tr-87L" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_ray" translatesAutoresizingMaskIntoConstraints="NO" id="lXp-ln-OZi">
+                                                        <rect key="frame" x="310" y="12.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="lXp-ln-OZi" secondAttribute="height" multiplier="1:1" id="13g-qr-fdh"/>
+                                                            <constraint firstAttribute="width" constant="25" id="2Lf-d0-afM"/>
+                                                            <constraint firstAttribute="height" constant="25" id="WBp-VF-z0f"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="m0I-tr-87L" secondAttribute="bottom" id="Ivk-Sb-vS8"/>
+                                                    <constraint firstItem="lXp-ln-OZi" firstAttribute="trailing" secondItem="m0I-tr-87L" secondAttribute="trailing" id="VTd-Mx-osb"/>
+                                                    <constraint firstItem="m0I-tr-87L" firstAttribute="leading" secondItem="7Sk-mA-mls" secondAttribute="leading" id="Zl2-Zo-GEu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="m0I-tr-87L" secondAttribute="trailing" id="gBC-p1-AJK"/>
+                                                    <constraint firstItem="m0I-tr-87L" firstAttribute="top" secondItem="7Sk-mA-mls" secondAttribute="top" id="wcY-0J-Yy6"/>
+                                                    <constraint firstItem="lXp-ln-OZi" firstAttribute="centerY" secondItem="7Sk-mA-mls" secondAttribute="centerY" id="zPd-B0-Jqh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="RoG-nb-8b1">
+                                                <rect key="frame" x="0.0" y="927.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXU-xs-oC0" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_ray" translatesAutoresizingMaskIntoConstraints="NO" id="YJe-oL-eaY">
+                                                        <rect key="frame" x="310" y="12.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="YJe-oL-eaY" secondAttribute="height" multiplier="1:1" id="8Ym-Yt-qJa"/>
+                                                            <constraint firstAttribute="width" constant="25" id="NDs-5L-6s3"/>
+                                                            <constraint firstAttribute="height" constant="25" id="rNe-KV-Eue"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="YJe-oL-eaY" firstAttribute="trailing" secondItem="fXU-xs-oC0" secondAttribute="trailing" id="0LM-nH-J3R"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fXU-xs-oC0" secondAttribute="trailing" id="R36-HT-fEH"/>
+                                                    <constraint firstItem="fXU-xs-oC0" firstAttribute="leading" secondItem="RoG-nb-8b1" secondAttribute="leading" id="Vl5-AK-MUX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fXU-xs-oC0" secondAttribute="bottom" id="XXZ-pW-BVm"/>
+                                                    <constraint firstItem="fXU-xs-oC0" firstAttribute="top" secondItem="RoG-nb-8b1" secondAttribute="top" id="e7f-8q-MXX"/>
+                                                    <constraint firstItem="YJe-oL-eaY" firstAttribute="centerY" secondItem="RoG-nb-8b1" secondAttribute="centerY" id="rcY-d3-4Hi"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="Mbw-jt-g23">
+                                                <rect key="frame" x="0.0" y="1007.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5GF-aU-4HF" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_ray" translatesAutoresizingMaskIntoConstraints="NO" id="Abh-H7-Klx">
+                                                        <rect key="frame" x="310" y="12.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Abh-H7-Klx" secondAttribute="height" multiplier="1:1" id="QVx-Nq-aga"/>
+                                                            <constraint firstAttribute="height" constant="25" id="Skg-LA-Xlu"/>
+                                                            <constraint firstAttribute="width" constant="25" id="oVD-GB-N9s"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="5GF-aU-4HF" secondAttribute="trailing" id="3na-IZ-1QL"/>
+                                                    <constraint firstItem="5GF-aU-4HF" firstAttribute="top" secondItem="Mbw-jt-g23" secondAttribute="top" id="43S-o8-zri"/>
+                                                    <constraint firstItem="5GF-aU-4HF" firstAttribute="leading" secondItem="Mbw-jt-g23" secondAttribute="leading" id="NXd-8v-2Eq"/>
+                                                    <constraint firstAttribute="bottom" secondItem="5GF-aU-4HF" secondAttribute="bottom" id="seP-gh-S05"/>
+                                                    <constraint firstItem="Abh-H7-Klx" firstAttribute="trailing" secondItem="5GF-aU-4HF" secondAttribute="trailing" id="ur0-0C-3id"/>
+                                                    <constraint firstItem="Abh-H7-Klx" firstAttribute="centerY" secondItem="Mbw-jt-g23" secondAttribute="centerY" id="z3H-1y-Efr"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="LXv-QH-LgA">
+                                                <rect key="frame" x="0.0" y="1087.5" width="335" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kd0-lr-H3o" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_ray" translatesAutoresizingMaskIntoConstraints="NO" id="4IR-XA-ody">
+                                                        <rect key="frame" x="310" y="12.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="25" id="B3z-ZO-O92"/>
+                                                            <constraint firstAttribute="width" secondItem="4IR-XA-ody" secondAttribute="height" multiplier="1:1" id="bzC-Ob-Hyh"/>
+                                                            <constraint firstAttribute="height" constant="25" id="sal-yy-asW"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="4IR-XA-ody" firstAttribute="trailing" secondItem="kd0-lr-H3o" secondAttribute="trailing" id="AWD-vT-DOu"/>
+                                                    <constraint firstItem="kd0-lr-H3o" firstAttribute="leading" secondItem="LXv-QH-LgA" secondAttribute="leading" id="GoE-4z-zBI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kd0-lr-H3o" secondAttribute="trailing" id="Tyy-cO-8zM"/>
+                                                    <constraint firstItem="kd0-lr-H3o" firstAttribute="top" secondItem="LXv-QH-LgA" secondAttribute="top" id="acl-c6-gwA"/>
+                                                    <constraint firstItem="4IR-XA-ody" firstAttribute="centerY" secondItem="LXv-QH-LgA" secondAttribute="centerY" id="f61-Px-mgv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="kd0-lr-H3o" secondAttribute="bottom" id="pCz-3o-fiI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gjm-w9-YG6">
+                                                <rect key="frame" x="0.0" y="1167.5" width="335" height="181"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ConfirmPassword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="laW-LE-G9i" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="181"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_ray" translatesAutoresizingMaskIntoConstraints="NO" id="60z-Kc-HMY">
+                                                        <rect key="frame" x="310" y="78" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="MEf-Cu-3re"/>
+                                                            <constraint firstAttribute="width" constant="25" id="UmF-71-JUb"/>
+                                                            <constraint firstAttribute="width" secondItem="60z-Kc-HMY" secondAttribute="height" multiplier="1:1" id="vJn-Yc-8OF"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="laW-LE-G9i" secondAttribute="bottom" id="8Ib-YL-58M"/>
+                                                    <constraint firstItem="60z-Kc-HMY" firstAttribute="centerY" secondItem="Gjm-w9-YG6" secondAttribute="centerY" id="BcT-vw-Ccb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="laW-LE-G9i" secondAttribute="trailing" id="HVf-tu-1aW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="60z-Kc-HMY" secondAttribute="trailing" id="nfZ-PL-8f5"/>
+                                                    <constraint firstItem="laW-LE-G9i" firstAttribute="top" secondItem="Gjm-w9-YG6" secondAttribute="top" id="qQy-6Y-RWe"/>
+                                                    <constraint firstItem="laW-LE-G9i" firstAttribute="leading" secondItem="Gjm-w9-YG6" secondAttribute="leading" id="uUY-F7-7pE"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have read the privacy and policies of the application." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxa-Jm-5IK">
+                                                <rect key="frame" x="0.0" y="1378.5" width="335" height="13.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ddj-oU-wQm" firstAttribute="bottom" secondItem="vQX-TB-3QJ" secondAttribute="bottom" id="FGY-YU-VbG"/>
+                                    <constraint firstItem="Ddj-oU-wQm" firstAttribute="leading" secondItem="vQX-TB-3QJ" secondAttribute="leading" constant="20" id="OfG-ni-zXq"/>
+                                    <constraint firstItem="Ddj-oU-wQm" firstAttribute="top" secondItem="vQX-TB-3QJ" secondAttribute="top" id="Zsm-8d-6zz"/>
+                                    <constraint firstItem="Ddj-oU-wQm" firstAttribute="trailing" secondItem="vQX-TB-3QJ" secondAttribute="trailing" constant="20" id="r9a-vY-ccO"/>
+                                    <constraint firstItem="Ddj-oU-wQm" firstAttribute="width" secondItem="jOc-g3-pxW" secondAttribute="width" id="uNk-eU-0bM"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="vQX-TB-3QJ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="jOc-g3-pxW"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8u0-8J-dvg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rxN-SQ-vKC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4202" y="192"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tX6-aK-jde">
+            <objects>
+                <viewController id="kOG-mk-4fi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Zc-cz-m5J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="99D-pi-1Se">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="r9e-5B-zTv">
+                                        <rect key="frame" x="0.0" y="20" width="254.5" height="1044.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zb6-MW-DT2">
+                                                <rect key="frame" x="0.0" y="0.0" width="254.5" height="34"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mqf-fo-7C9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="254.5" height="34"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rxi-b5-T0a">
+                                                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nVH-in-vnc">
+                                                                <rect key="frame" x="131.5" y="0.0" width="123" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="47e-u5-dOa">
+                                                <rect key="frame" x="0.0" y="64" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="apl-hR-qdY">
+                                                <rect key="frame" x="0.0" y="128" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UXb-ua-ezl">
+                                                <rect key="frame" x="0.0" y="192" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gqm-ZN-Le0">
+                                                <rect key="frame" x="0.0" y="256" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OCT-28-heN">
+                                                <rect key="frame" x="0.0" y="320" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fiM-Dh-pkN">
+                                                <rect key="frame" x="0.0" y="384" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="krh-5d-XGp">
+                                                <rect key="frame" x="0.0" y="448" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykJ-Ok-dz7">
+                                                <rect key="frame" x="0.0" y="512" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yIT-Bj-m0q">
+                                                <rect key="frame" x="0.0" y="576" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DSR-jW-D6O">
+                                                <rect key="frame" x="0.0" y="640" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="81g-iP-l0p">
+                                                <rect key="frame" x="0.0" y="704" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mx3-28-elu">
+                                                <rect key="frame" x="0.0" y="768" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y0m-DX-78Z">
+                                                <rect key="frame" x="0.0" y="832" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3r9-rx-xCv">
+                                                <rect key="frame" x="0.0" y="896" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SeD-3t-sGa">
+                                                <rect key="frame" x="0.0" y="960" width="254.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accept the Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQB-lv-ZL3" userLabel="Accept the Terms and Conditions">
+                                                <rect key="frame" x="0.0" y="1024" width="254.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="r9e-5B-zTv" firstAttribute="width" secondItem="PuS-tx-w95" secondAttribute="width" id="K4U-ML-WAm"/>
+                                    <constraint firstItem="r9e-5B-zTv" firstAttribute="leading" secondItem="VnO-FD-4po" secondAttribute="leading" id="Xpo-is-PR7"/>
+                                    <constraint firstItem="r9e-5B-zTv" firstAttribute="bottom" secondItem="VnO-FD-4po" secondAttribute="bottom" id="nQ2-zk-wqm"/>
+                                    <constraint firstItem="r9e-5B-zTv" firstAttribute="top" secondItem="VnO-FD-4po" secondAttribute="top" constant="20" id="t3O-DI-jzf"/>
+                                    <constraint firstItem="r9e-5B-zTv" firstAttribute="trailing" secondItem="VnO-FD-4po" secondAttribute="trailing" constant="20" id="y3z-3u-lh6"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="VnO-FD-4po"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="PuS-tx-w95"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="GBv-Zw-2VV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKv-EC-MVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3085.5999999999999" y="400.74962518740631"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon_ray" width="219" height="317"/>
+    </resources>
+</document>
